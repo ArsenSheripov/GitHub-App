@@ -1,0 +1,60 @@
+@import '../App.scss';
+@import '../main/main.scss';
+
+.card {
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__btn {
+		padding: 2rem 3rem;
+		align-self: flex-start;
+		font-size: 1.5rem;
+		color: $yellow;
+		border: 3px solid $yellow;
+		border-radius: 0.2rem;
+		background-color: $dark;
+		cursor: pointer;
+		transition: all 0.2s ease;
+
+		&:hover {
+			background-color: $yellow;
+			color: $dark;
+			border: 3px solid $dark;
+		}
+	}
+
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__name {
+		font-size: 1.8rem;
+	}
+
+	&__star {
+		font-size: 1.2rem;
+		position: relative;
+
+		&::before {
+			content: '\2606';
+			position: absolute;
+			font-size: 1.5rem;
+			top: -32%;
+			left: -40%;
+		}
+	}
+}
+
+.contributors {
+
+	&__item {
+		font-size: 1.2rem;
+	}
+}

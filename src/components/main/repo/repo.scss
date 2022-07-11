@@ -1,0 +1,70 @@
+@import '../../App.scss';
+
+.repo {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid $ash;
+	padding: 1.25rem;
+	background-color: $lgray;
+	border-radius: 5px;
+	margin-bottom: 0.3rem;
+
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 0.5rem;
+	}
+
+	&__title {
+		font-size: 1.8rem;
+		font-weight: 500;
+
+		a {
+			text-decoration: none;
+			color: $dark;
+
+			&:hover {
+				text-decoration: underline;
+			}
+
+			&:visited {
+				color: $brown;
+			}
+		}
+
+	}
+
+	&__star {
+		font-size: 1.2rem;
+		position: relative;
+
+		&::before {
+			content: '\2606';
+			position: absolute;
+			font-size: 1.5rem;
+			top: -32%;
+			left: -40%;
+		}
+	}
+
+	&__last-commit {
+		font-size: 1.2rem;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: $dark;
+		font-size: 1.2rem;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		&:visited {
+			color: $brown;
+		}
+
+	}
+}

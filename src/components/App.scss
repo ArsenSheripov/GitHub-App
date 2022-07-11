@@ -1,0 +1,18 @@
+$dark: #1c222a;
+$ash: #6a655d;
+$lgray: #dcdcdc;
+$yellow: #edb021;
+$brown: #825b00;
+
+body {
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	color: $dark;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 67.5rem;
+}
